@@ -1,38 +1,129 @@
-.App {
-  text-align: center;
+.nav{
+    background-color: #19162f;
+    text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+ul > li{
+    display: inline-block;
+    margin: 5px;
+    margin-top: 30px;
+    padding: 10px;
+    background-color: #201d39;
+    border-radius: 8px;
+    text-transform: uppercase;
+    color:white;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Bench_list{
+    color:white;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-.App-header {
-  background-color: #282c34;
+.Shoulder_list{
+    color:white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mulish", sans-serif;
+}
+
+.line_body {
+  display: flex;
+  margin-top: -40px;
+  justify-content: center;
+  align-items: center;
   min-height: 100vh;
+  background-color: #19162f;
+}
+
+.container {
+  max-width: 90%;
+  height: 100%;
+  padding: 60px 45px;
+  border-radius: 8px;
+  color: #fff;
+  background-color: #201d39;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 
-.App-link {
-  color: #61dafb;
+h1 {
+  font-size: 24px;
+  margin-bottom: 60px;
+  text-align:center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.stats {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  column-gap: 16px;
+  border: 1px solid #19162f;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.stat {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  padding: 30px 70px 60px 30px;
+  transition: 500ms ease all;
+}
+
+.stat:hover {
+  background-color: #0c531f;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.stat span {
+  color: #b6b2db;
+  text-transform: uppercase;
+}
+
+.stat span:first-child {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.stat span:nth-child(2) {
+  font-size: 36px;
+  font-weight: 800;
+}
+
+.line-graph {
+  display: none !important;
+}
+
+@media (min-width: 450px) {
+  .line-graph {
+    display: block !important;
   }
-  to {
-    transform: rotate(360deg);
+
+  .stats {
+    margin-bottom: 70px;
+  }
+}
+
+@media (min-width: 850px) {
+  body {
+    margin: 0;
+  }
+
+  .container {
+    min-width: 815px;
+    min-height: 800px;
+    height: initial;
   }
 }
