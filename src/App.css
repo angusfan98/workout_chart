@@ -27,6 +27,12 @@ ul > li{
     font-weight: bold;
 }
 
+.Squat_list{
+    color:white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;800&display=swap");
 
 * {
